@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pendaftaran Les Bimbel</title>
+</head>
+<body>
+    <h2>Formulir Pendaftaran Les Bimbel</h2>
+    <form action="simpan_pendaftaran.php" method="post">
+        <label>Nama Siswa:</label><br>
+        <input type="text" name="nama_siswa" required><br><br>
+
+        <label>Jenis Kelamin:</label><br>
+        <select name="jenis_kelamin" required>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+        </select><br><br>
+
+        <label>Alamat:</label><br>
+        <textarea name="alamat" required></textarea><br><br>
+
+        <label>No. HP:</label><br>
+        <input type="text" name="no_hp"><br><br>
+
+        <label>Pilih Program Bimbel:</label><br>
+        <select name="id_program" required>
+            <option value="1">Matematika Intensif</option>
+            <option value="2">Bahasa Inggris</option>
+            <option value="3">Persiapan UTBK</option>
+        </select><br><br>
+
+        <label>Tanggal Daftar:</label><br>
+        <input type="date" name="tanggal_daftar" required><br><br>
+
+        <input type="submit" value="Daftar Sekarang">
+    </form>
+</body>
+</html>
